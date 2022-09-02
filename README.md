@@ -1,4 +1,4 @@
-This is my fork of [Sainnhe Park's](https://github.com/sainnhe) Gruvbox Material. I left the `master` branch alone and use `dev-cfs` branch for my personal settings. I wanted something just a little more contrasty with a little darker background than the normal hard/dark version. 
+This is my fork of [Sainnhe Park's Gruvbox Material theme](https://github.com/sainnhe/gruvbox-material). I left the `master` branch alone and use `dev-cfs` branch for my personal settings. I wanted something just a little more contrasty with a little darker background than the normal hard/dark version. 
 
 Here is a screenshot of Alacritty with some of my config files open in tmux using the theme.
 
