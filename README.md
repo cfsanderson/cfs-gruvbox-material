@@ -39,8 +39,10 @@ Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/g
 
 There are 3 palettes available in this color scheme:
 
+👏 𝑵𝒐𝒕𝒆: 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝒕𝒉𝒆 𝒇𝒐𝒍𝒍𝒐𝒘𝒊𝒏𝒈 𝒍𝒊𝒏𝒆𝒔 𝒕𝒐 𝒑𝒓𝒆𝒗𝒊𝒆𝒘
+
 <details>
-  <summary><code>material</code>: Carefully designed to have a soft contrast(<b>click on this line to preview</b>)</summary>
+  <summary><code>material</code>: Carefully designed to have a soft contrast</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
@@ -51,7 +53,7 @@ There are 3 palettes available in this color scheme:
 </details>
 
 <details>
-  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two(<b>click on this line to preview</b>)</summary>
+  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two</summary>
 
 |        |                                                           𝐃𝐚𝐫𝐤                                                           |                                                           𝐋𝐢𝐠𝐡𝐭                                                           |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
@@ -62,7 +64,7 @@ There are 3 palettes available in this color scheme:
 </details>
 
 <details>
-  <summary><code>original</code>: The color palette used in the original gruvbox(<b>click on this line to preview</b>)</summary>
+  <summary><code>original</code>: The color palette used in the original gruvbox</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
@@ -80,37 +82,11 @@ This color scheme uses the `material` palette by default, you can use a global v
 - Switch back to the original color palette whenever you like.
 - Highly customizable.
 - Rich support for common file types and plugins.
-- [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
+- Tree-sitter support.
+- Semantic highlighting support.
+- [Italic support](https://aka.sainnhe.dev/fonts) 🎉
 
-## Installation
-
-### Via Plugin Manager
-
-Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
-
-```vim
-Plug 'sainnhe/gruvbox-material'
-```
-
-For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
-
-### Manually
-
-1. Clone this repository.
-2. Copy `/path/to/gruvbox-material/autoload/gruvbox_material.vim` to `~/.vim/autoload/`.
-3. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to `~/.vim/colors/` .
-4. Copy `/path/to/gruvbox-material/doc/gruvbox-material.txt` to `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
-5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/` .
-6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/` .
-
-### AUR
-
-There are some packages available for Arch Linux users in AUR:
-
-- [vim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/vim-gruvbox-material-git/)
-- [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
-
-## Usage
+## Documentation
 
 See [`:help gruvbox-material.txt`](https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt)
 
@@ -120,7 +96,7 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## More Color Schemes
 
-- [Forest Night](https://github.com/sainnhe/forest-night)
+- [Everforest](https://github.com/sainnhe/everforest)
 - [Edge](https://github.com/sainnhe/edge)
 - [Sonokai](https://github.com/sainnhe/sonokai)
 
@@ -144,4 +120,4 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT](./LICENSE) © sainnhe
