@@ -1,3 +1,38 @@
+This is my fork of [Sainnhe Park's](https://github.com/sainnhe) Gruvbox Material. I left the `master` branch alone and use `dev-cfs` branch for my personal settings. I wanted something just a little more contrasty with a little darker background than the normal hard/dark version. 
+
+Here is a screenshot of Alacritty with some of my config files open in tmux using the theme.
+
+![terminal screenshot](term-sauce.png)
+
+You can install it using package managers just like the instructions for the regular installs but with a flag for my branch.
+
+**with vim-plug:**
+
+```vim
+Plug 'cfsanderson/gruvbox-material', {'branch': 'dev-cfs'}
+
+```
+
+**or with Lua using Packer:**
+
+```lua
+use { 'cfsanderson/gruvbox-material',  branch = 'dev-cfs' }
+```
+
+These are the settings that I use:
+```vim
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 0
+let g:gruvbox_material_menu_selection_background = 'green'
+let g:gruvbox_material_palette = 'material'
+let g:gruvbox_material_sign_column_background = 'none'
+
+colorscheme gruvbox-material
+set background=dark
+```
+All credit goes to Sainhe Park. All I did was update a few hex values because I'm a picky designer type. Enjoy. 
+
 ## Introduction
 
 Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/gruvbox), the contrast is adjusted to be softer in order to protect developers' eyes.
