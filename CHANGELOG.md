@@ -6,10 +6,117 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Optimize `b0o/incline.nvim`.
+- Optimize winbar.
+- Optimize `echasnovski/mini.nvim`.
+- Support coc popup menu.
+- Optimize `ggandor/lightspeed.nvim`.
+- Optimize `pwntester/octo.nvim`.
+- Optimize `simrat39/symbols-outline.nvim`.
+- Support for YCM semantic highlighting and inlayHints.
+- Optimize `MattesGroeger/vim-bookmarks`.
+- Support for vim-lsp semantic highlighting and inlayHints.
+
+### Changed
+
+- Change default value of `g:gruvbox_material_sign_column_background` to `'none'`.
+
+## [1.2.4] - 2022-05-26
+
+### Added
+
+- Add `g:gruvbox_material_spell_foreground`.
+- Optimize `junegunn/limelight.vim`.
+- Add FAQ for configuration options.
+- Optimize `rhysd/clever-f.vim`.
+- Optimize `rcarriga/nvim-dap-ui`.
+- Add `g:gruvbox_material_disable_terminal_colors`.
+- Optimize `voldikss/vim-floaterm`.
+- Support `g:gruvbox_material_transparent_background == 2`.
+- Optimize `stevearc/aerial.nvim`.
+- Optimize `wbthomason/packer.nvim`.
+
+### Changed
+
+- Redesign coc symbols.
+- Redesign `liuchengxu/vim-clap`.
+- Redesign semantic hi groups in coc.nvim [neoclide/coc.nvim#3355](https://github.com/neoclide/coc.nvim/pull/3355).
+- Generate `/after/syntax`.
+- Split `g:gruvbox_material_palette` into `g:gruvbox_material_foreground` and `g:gruvbox_material_colors_override`.
+
+### Fixed
+
+- Update &runtimepath after generating syntax files.
+
+### Removed
+
+- Remove examples of configuration options in help doc.
+
+## [1.2.3] - 2022-01-09
+
+### Added
+
+- Add `g:gruvbox_material_ui_contrast`.
+- Optimize `fannheyward/coc-rust-analyzer`.
+- Add [Diagnostic](https://github.com/neovim/neovim/pull/15585) highlight groups.
+- Optimize `vimwiki/vimwiki`.
+- Optimize `hrsh7th/nvim-cmp`.
+- Optimize `folke/trouble.nvim`.
+- Optimize `TimUntersberger/neogit`.
+- Optimize `lambdalisue/fern.vim`.
+- Optimize `romgrk/barbar.nvim`.
+- Optimize `rcarriga/nvim-notify`.
+- Support `nvim-lualine/lualine.nvim`.
+- Optimize performance in vim by disabling hi groups of neovim-only plugins.
+- Optimize `lewis6991/gitsigns.nvim`.
+- Optimize `airblade/vim-gitgutter`.
+- Optimize `mhinz/vim-signify`.
+- Optimize `glepnir/dashboard-nvim`.
+- Optimize `glepnir/lspsaga.nvim`.
+- Add modeline to generated ftplugin files.
+
+### Changed
+
+- Disable tmux checking.
+
+## [1.2.2] - 2021-08-06
+
+### Added
+
+- Optimize `lervag/vimtex`.
+- Add `g:gruvbox_material_diagnostic_text_highlight`
+- Optimize `liuchengxu/vim-clap`.
+- Add whitelist for extended file types.
+- Support for leaderf popup mode.
+- Optimize `nvim-telescope/telescope.nvim`.
+- Add `g:gruvbox_material_diagnostic_virtual_text`.
+- Optimize `kyazdani42/nvim-tree.lua`.
+- Add installation guide for using pack feature.
+- New value `'mix'` for `g:gruvbox_material_statusline_style`.
+- Add `g:gruvbox_material_show_eob`.
+- Optimize `McSinyx/vim-octave`.
+- Support semantic highlight in coc.nvim .
+- Optimize semantic highlight in some plugins.
+- Support `thiagoalessio/rainbow_levels.vim` and `p00f/nvim-ts-rainbow`.
+- Optimize coc symbols and coc tree.
+
+### Changed
+
+- Diagnostics text highlights.
+- Adjust diff and visual background colors in light variant.
+- `gui=undercurl` is enabled in tmux >= 2.9
+- Adjust the design of airline/lightline.
+- Redesign syntax logic of tree-sitter.
+
+## [1.2.1] - 2020-12-29
+
+### Added
+
 - Optimize `nvim-treesitter/nvim-treesitter`.
 - AUR packages.
 - Support neovim lsp diagnostics.
 - New highlight groups for coc-explorer.
+- Outline of help doc.
 
 ### Changed
 
@@ -21,6 +128,7 @@ All notable changes to this project will be documented in this file.
 - Fix `DiffText` in Vim.
 - Fix `CurrentWord` in diff mode.
 - Fix `CursorColumn` in diff mode.
+- Clear highlights when better performance is disabled.
 
 ## [1.2.0] - 2020-06-04
 
@@ -263,7 +371,11 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.4...HEAD
+[1.2.4]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.3...v1.2.4
+[1.2.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.2...v1.2.3
+[1.2.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...v1.2.0
 [1.1.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.1...v1.1.2
