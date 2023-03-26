@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Optimize `github/copilot.vim`.
+
+## [1.2.5] - 2023-01-14
+
+### Added
+
 - Optimize `b0o/incline.nvim`.
 - Optimize winbar.
 - Optimize `echasnovski/mini.nvim`.
@@ -16,6 +22,10 @@ All notable changes to this project will be documented in this file.
 - Support for YCM semantic highlighting and inlayHints.
 - Optimize `MattesGroeger/vim-bookmarks`.
 - Support for vim-lsp semantic highlighting and inlayHints.
+- New tree-sitter tokens.
+- Support for shading.
+- Optimize `nvim-neo-tree/neo-tree.nvim`.
+- Add `g:gruvbox_material_dim_inactive_windows`.
 
 ### Changed
 
@@ -371,7 +381,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.4...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.5...HEAD
+[1.2.5]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.1...v1.2.2
