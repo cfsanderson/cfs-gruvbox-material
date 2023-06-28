@@ -216,7 +216,7 @@ E.g.
     let g:gruvbox_material_better_performance = 1
 
     colorscheme gruvbox-material
-    let g:lightline.colorscheme = 'gruvbox_material'
+    let g:lightline = {'colorscheme' : 'gruvbox_material'}
 <
 ------------------------------------------------------------------------------
                                                  *g:gruvbox_material_background*
@@ -299,6 +299,16 @@ background), set this option to `2`.
 
     Type:               |Number|
     Available values:   `0`, `1`, `2`
+    Default value:      `0`
+
+------------------------------------------------------------------------------
+                                       *g:gruvbox_material_dim_inactive_windows*
+g:gruvbox_material_dim_inactive_windows~
+
+Dim inactive windows. Only works in neovim currently.
+
+    Type:               |Number|
+    Available values:   `0`, `1`
     Default value:      `0`
 
 ------------------------------------------------------------------------------
@@ -411,21 +421,22 @@ Currently, the following plugins are supported:
                                     *g:gruvbox_material_diagnostic_virtual_text*
 g:gruvbox_material_diagnostic_virtual_text~
 
-Some plugins can use virtual text feature of neovim to display
-error/warning/info/hint information, you can use this option to adjust the
-colors of it.
+Some plugins can use the virtual text feature of Neovim to display
+error/warning/info/hint information. You can use this option to adjust the
+way these virtual texts are highlighted.
 
     Type:               |String|
-    Available values:   `'grey'`, `'colored'`
+    Available values:   `'grey'`, `'colored'`, `'highlighted'`
     Default value:      `'grey'`
 
 Currently, the following plugins are supported:
 
-- neovim's built-in language server client
+- Neovim's built-in language server client
 - https://github.com/neoclide/coc.nvim
 - https://github.com/prabirshrestha/vim-lsp
 - https://github.com/dense-analysis/ale
 - https://github.com/neomake/neomake
+- https://github.com/ycm-core/YouCompleteMe
 
 ------------------------------------------------------------------------------
                                                *g:gruvbox_material_current_word*
