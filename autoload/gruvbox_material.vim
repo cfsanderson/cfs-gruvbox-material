@@ -6,40 +6,14 @@
 " License: MIT License
 " =============================================================================
 
-function! gruvbox_material#get_configuration() "{{{
-  return {
-        \ 'background': get(g:, 'gruvbox_material_background', 'medium'),
-        \ 'foreground': get(g:, 'gruvbox_material_foreground', get(g:, 'gruvbox_material_palette', 'material')),
-        \ 'transparent_background': get(g:, 'gruvbox_material_transparent_background', 0),
-        \ 'dim_inactive_windows': get(g:, 'gruvbox_material_dim_inactive_windows', 0),
-        \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0),
-        \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0),
-        \ 'enable_italic': get(g:, 'gruvbox_material_enable_italic', 0),
-        \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'),
-        \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
-        \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
-        \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'none'),
-        \ 'spell_foreground': get(g:, 'gruvbox_material_spell_foreground', 'none'),
-        \ 'ui_contrast': get(g:, 'gruvbox_material_ui_contrast', 'low'),
-        \ 'show_eob': get(g:, 'gruvbox_material_show_eob', 1),
-        \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
-        \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
-        \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
-        \ 'diagnostic_text_highlight': get(g:, 'gruvbox_material_diagnostic_text_highlight', 0),
-        \ 'diagnostic_line_highlight': get(g:, 'gruvbox_material_diagnostic_line_highlight', 0),
-        \ 'diagnostic_virtual_text': get(g:, 'gruvbox_material_diagnostic_virtual_text', 'grey'),
-        \ 'disable_terminal_colors': get(g:, 'gruvbox_material_disable_terminal_colors', 0),
-        \ 'better_performance': get(g:, 'gruvbox_material_better_performance', 0),
-        \ 'colors_override': get(g:, 'gruvbox_material_colors_override', {}),
-        \ }
-endfunction "}}}
+function! gruvbox_material#get_configuration() "{{{ return { \ 'background': get(g:, 'gruvbox_material_background', 'medium'), \ 'foreground': get(g:, 'gruvbox_material_foreground', get(g:, 'gruvbox_material_palette', 'material')), \ 'transparent_background': get(g:, 'gruvbox_material_transparent_background', 0), \ 'dim_inactive_windows': get(g:, 'gruvbox_material_dim_inactive_windows', 0), \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0), \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0), \ 'enable_italic': get(g:, 'gruvbox_material_enable_italic', 0), \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'), \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'), \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'), \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'none'), \ 'spell_foreground': get(g:, 'gruvbox_material_spell_foreground', 'none'), \ 'ui_contrast': get(g:, 'gruvbox_material_ui_contrast', 'low'), \ 'show_eob': get(g:, 'gruvbox_material_show_eob', 1), \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'), \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'), \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0), \ 'diagnostic_text_highlight': get(g:, 'gruvbox_material_diagnostic_text_highlight', 0), \ 'diagnostic_line_highlight': get(g:, 'gruvbox_material_diagnostic_line_highlight', 0), \ 'diagnostic_virtual_text': get(g:, 'gruvbox_material_diagnostic_virtual_text', 'grey'), \ 'disable_terminal_colors': get(g:, 'gruvbox_material_disable_terminal_colors', 0), \ 'better_performance': get(g:, 'gruvbox_material_better_performance', 0), \ 'colors_override': get(g:, 'gruvbox_material_colors_override', {}), \ } endfunction "}}}
 
 function! gruvbox_material#get_palette(background, foreground, colors_override) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg_dim':           ['#141617',   '232'],
-            \ 'bg0':              ['#0b0d0f',   '234'],
+            \ 'bg0':              ['#161616',   '234'],
             \ 'bg1':              ['#282828',   '235'],
             \ 'bg2':              ['#282828',   '235'],
             \ 'bg3':              ['#3c3836',   '237'],
@@ -171,8 +145,8 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
   if a:foreground ==# 'material' "{{{
     if &background ==# 'dark'
       let palette2 = {
-            \ 'fg0':              ['#E1D7C6',   '223'],
-            \ 'fg1':              ['#ddc7a1',   '223'],
+            \ 'fg0':              ['#D7D7B3',   '223'],
+            \ 'fg1':              ['#D7D7B3',   '223'],
             \ 'red':              ['#ea6962',   '167'],
             \ 'orange':           ['#e78a4e',   '208'],
             \ 'yellow':           ['#d8a657',   '214'],
