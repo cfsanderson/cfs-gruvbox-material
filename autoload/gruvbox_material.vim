@@ -173,7 +173,7 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
   if a:foreground ==# 'material' "{{{
     if &background ==# 'dark'
       let palette2 = {
-            \ 'fg0':              ['#FD1AD7',   '223'],
+            \ 'fg0':              ['#dfcfb4',   '223'],
             \ 'fg1':              ['#ddc7a1',   '223'],
             \ 'red':              ['#ea6962',   '167'],
             \ 'orange':           ['#e78a4e',   '208'],
